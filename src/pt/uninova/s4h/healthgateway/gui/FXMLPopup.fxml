@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="1000.0" maxWidth="1900.0" style="-fx-background-color: #f3f3f3; -fx-border-color: #e5b300; -fx-border-width: 2 2 2 2;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pt.uninova.s4h.healthgateway.gui.FXMLPopupController">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutX="1.0" layoutY="1.0">
+         <children>
+            <Label fx:id="popupLabel" alignment="CENTER" contentDisplay="CENTER" text="Label&#10;label&#10;label" textFill="#06344f" wrapText="true">
+               <font>
+                  <Font name="Lato-Bold" size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+               </HBox.margin>
+            </Label>
+            <Button fx:id="popupButton" minHeight="60.0" minWidth="220.0" mnemonicParsing="false" onAction="#popupButtonPress" stylesheets="@CSS/button.css" text="%popup.button.ok" textFill="WHITE">
+               <font>
+                  <Font name="Lato-Bold" size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
