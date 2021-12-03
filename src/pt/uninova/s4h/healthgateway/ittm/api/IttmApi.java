@@ -278,7 +278,7 @@ public class IttmApi {
         } catch (SaveMedxEventsException ex) {
             ITTM_API_LOGGER.error("Error saving training data = " + ex.getMessage());
         }
-
+        
         if (token.equalsIgnoreCase(INVALID_TOKEN)) {
             throw new IttmApiTokenException();
         }

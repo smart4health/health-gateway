@@ -10,6 +10,7 @@ import org.slf4j.LoggerFactory;
 import pt.uninova.s4h.healthgateway.gui.FXMLDocumentController;
 import pt.uninova.s4h.healthgateway.gui.PhysiotherapyGui;
 import pt.uninova.s4h.healthgateway.ittm.api.IttmApi;
+import pt.uninova.s4h.healthgateway.box.api.BoxApi;
 import pt.uninova.s4h.healthgateway.mqtt.HgMqttClient;
 import pt.uninova.s4h.healthgateway.util.logging.LoggerUtils;
 
@@ -33,7 +34,8 @@ public class HealthGatewayMain {
     private static final String ITTM_HOST = "ittm_host";
     private static final String ITTM_MACHINE_ID = "ittm_machine_id";
     private static final String HUB_SENSORIZATION = "hub_sensorization";
-    private static final String LOAD_CELL = "load_cell";    
+    private static final String LOAD_CELL = "load_cell";
+    private static final String BOX_HOST = "box_host";     
 
     static boolean deleteDirectory(File directoryToBeDeleted) {
         File[] allContents = directoryToBeDeleted.listFiles();
@@ -72,6 +74,7 @@ public class HealthGatewayMain {
             String ittmMachineID = prop.getProperty(ITTM_MACHINE_ID);
             String hubSensorization = prop.getProperty(HUB_SENSORIZATION);
             String loadcell = prop.getProperty(LOAD_CELL);
+            String boxHost = prop.getProperty(BOX_HOST);
             
             //LoggerUtils.setRootLoggingConsole(Level.toLevel(loggingLevel, Level.WARN));
             LoggerUtils.setRootLoggingConsoleAndFile(Level.toLevel(loggingLevel, Level.WARN), Level.WARN);
@@ -86,6 +89,7 @@ public class HealthGatewayMain {
             MAIN_LOGGER.info(ITTM_MACHINE_ID + " = " + ittmMachineID);
             MAIN_LOGGER.info(HUB_SENSORIZATION + " = " + hubSensorization);
             MAIN_LOGGER.info(LOAD_CELL + " = " + loadcell);
+            MAIN_LOGGER.info(BOX_HOST + " = " + boxHost);
 
             String OS = (System.getProperty("os.name")).toUpperCase();
             if (OS.contains("WIN")) {
@@ -106,6 +110,7 @@ public class HealthGatewayMain {
             
             HgMqttClient.getFirstInstance(mqttSubscribeTopics.split(";"), mqttPublishTopic, mqttBrokerUrl, mqttClientId, saveDirectory);
             IttmApi.getFirstInstance(ittmHost, ittmMachineID, saveDirectory);
+            BoxApi.getFirstInstance(boxHost);
 
             PhysiotherapyGui gui = new PhysiotherapyGui();
             gui.setParm(ittmMachineID,hubSensorization,loadcell,saveDirectory);

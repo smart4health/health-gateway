@@ -4,7 +4,11 @@ import pt.uninova.s4h.healthgateway.ittm.api.*;
 import java.lang.invoke.MethodHandles;
 import java.time.Instant;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import org.slf4j.LoggerFactory;
+import pt.uninova.s4h.healthgateway.box.api.BoxApi;
+import pt.uninova.s4h.healthgateway.box.api.BoxApiException;
 import pt.uninova.s4h.healthgateway.ittm.message.training.Score;
 import pt.uninova.s4h.healthgateway.ittm.message.training.SensorData;
 import pt.uninova.s4h.healthgateway.ittm.message.training.TrainingRequestJson;
@@ -114,8 +118,13 @@ public class IttmTrainingManager {
         if (trainingStatus != EventMessageType.TRAINING_SCORE) {
             return;
         }
-        try {
-            ITTM_MANAGER_LOGGER.info("Finish training");
+        ITTM_MANAGER_LOGGER.info("Finish training");
+        try {            
+            BoxApi.getInstance().uploadTraining(trainingRequestJson);
+        } catch (BoxApiException ex) {
+            ITTM_MANAGER_LOGGER.error(ex.getMessage());
+        }
+        try {            
             IttmApi.getInstance().uploadTrainingData(trainingRequestJson);
         } catch (IttmApiException ex) {
             ITTM_MANAGER_LOGGER.error(ex.getMessage());
@@ -129,6 +138,7 @@ public class IttmTrainingManager {
             //documentController.healthMonitorConnected(false);
             onHubHgMessage.dispatch(new HubHgMessage(EventMessageType.TRAINING_TOKEN_ERROR, null, null));
         }
+
         trainingRequestJson = new TrainingRequestJson();
         trainingStatus = EventMessageType.FINISH_TRAINING;
     }

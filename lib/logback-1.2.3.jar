@@ -2217,3 +2217,97 @@
 2021-06-02 18:33:50.933 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
 2021-06-02 18:34:00.912 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Start Button Pressed.
 2021-06-02 18:34:04.020 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
+2021-12-03 21:42:54.535 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Error Retrieving Training Parameters: Status 500 = Retrieval error.
+ Make login
+2021-12-03 21:43:35.518 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Error Retrieving Training Parameters: Status 500 = Retrieval error.
+ Make login
+2021-12-03 21:44:36.074 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2021-12-03 21:44:36.075 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_a5a22c93-08bf-49ab-8649-c2b70525bd0c",
+    "training_ID": "MT_bb3d3f7a-bef1-42b8-9e0a-e2d524450cc9",
+    "session_number": 1,
+    "training_number": 11,
+    "LE_counterweight": 241.0,
+    "LE_trainingweight": 85.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 3,
+    "LE_seatcushion": "Nenhum",
+    "create_date": "2021-12-03 18:00:56.543000",
+    "measurement_date": "2021-12-03"
+  }
+}
+2021-12-03 21:45:44.041 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2021-12-03 21:45:44.042 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2021-12-03 21:45:48.531 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2021-12-03 21:45:48.532 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2021-12-03 21:45:48.539 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Start Button Pressed.
+2021-12-03 21:45:58.658 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
+2021-12-03 21:46:01.973 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Upload Button Pressed: true
+2021-12-03 21:46:02.234 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.box.api.BoxApi - IOException=Server returned HTTP response code: 500 for URL: http://bhealthhub13:9999/medx/lumbar-extension/training
+2021-12-03 21:46:02.234 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error reading(writing HTTP request
+2021-12-03 21:47:06.972 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2021-12-03 21:47:06.972 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2021-12-03 21:47:06.984 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Start Button Pressed.
+2021-12-03 21:47:10.087 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
+2021-12-03 21:47:11.534 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Upload Button Pressed: true
+2021-12-03 21:47:11.768 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.box.api.BoxApi - IOException=Server returned HTTP response code: 500 for URL: http://bhealthhub13:9999/medx/lumbar-extension/training
+2021-12-03 21:47:11.768 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error reading(writing HTTP request
