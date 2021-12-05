@@ -84,7 +84,7 @@ public class BoxApi {
 
         BoxTrainingRequestJson boxTrainingRequestJson = new BoxTrainingRequestJson();
         boxTrainingRequestJson.setTimestamp(trainingRequestJson.getStartTime()/1000);
-        boxTrainingRequestJson.setLength((trainingRequestJson.getStartTime()-trainingRequestJson.getStopTime())/1000);
+        boxTrainingRequestJson.setLength((trainingRequestJson.getStopTime()-trainingRequestJson.getStartTime())/1000);
         boxTrainingRequestJson.setScore(trainingRequestJson.getScore().getPercentage());
         boxTrainingRequestJson.setRepetitions(trainingRequestJson.getRepetitions());
         
@@ -93,10 +93,10 @@ public class BoxApi {
         String boxTrainingRequestStr = boxTrainingGsonUtil.toRequestJson(boxTrainingRequestJson);
         String boxTrainingResponseStr = boxPostRequest(CONTENT_TYPE, boxTrainingRequestStr);
 
-        BoxTrainingResponseJson boxTrainingResponseJson = boxTrainingGsonUtil.fromResponseJson(boxTrainingResponseStr);
-        if (boxTrainingResponseJson.getStatusCode() != 200) {
-            throw new BoxApiException("Error Uploading Training Data: Status " + boxTrainingResponseJson.getStatusCode() + " = " + boxTrainingResponseJson.getMessage());
-        }
+        //BoxTrainingResponseJson boxTrainingResponseJson = boxTrainingGsonUtil.fromResponseJson(boxTrainingResponseStr);
+        //if (boxTrainingResponseJson.getStatusCode() != 200) {
+        //    throw new BoxApiException("Error Uploading Training Data: Status " + boxTrainingResponseJson.getStatusCode() + " = " + boxTrainingResponseJson.getMessage());
+        //}
 
     }
 
