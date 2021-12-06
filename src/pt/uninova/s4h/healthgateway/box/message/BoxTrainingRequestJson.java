@@ -23,6 +23,9 @@ public class BoxTrainingRequestJson {
 
     @SerializedName("repetitions")
     private int repetitions;
+    
+    @SerializedName("weight")
+    private int weight;    
 
     public long getTimestamp() {
         return timestamp;
@@ -55,5 +58,12 @@ public class BoxTrainingRequestJson {
     public void setScore(float score) {
         this.score = score;
     }
+    
+    public int getWeight() {
+        return weight;
+    }
 
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
 }

@@ -327,7 +327,7 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private Label trainWeightLabel;
     @FXML
-    private Spinner<Double> TrainingWeightText;
+    private Spinner<Integer> TrainingWeightText;
     @FXML
     private Label zeroPositionLabel;
     @FXML
@@ -911,7 +911,7 @@ public class FXMLDocumentController implements Initializable {
         TrainingNumberText.getValueFactory().setValue(0);
         CounterweightUserText.getValueFactory().setValue(0);
         SeatCushionText.setText("");
-        TrainingWeightText.getValueFactory().setValue(0.0);
+        TrainingWeightText.getValueFactory().setValue(0);
         TrainIdText.setText("");
         ForceTestIdText.setText("");
 
@@ -926,7 +926,7 @@ public class FXMLDocumentController implements Initializable {
             TrainingNumberText.getValueFactory().setValue(parametersResponseJson.getValues().getTrainingNumber());
             CounterweightUserText.getValueFactory().setValue((int) parametersResponseJson.getValues().getLeCounterWeight());
             SeatCushionText.setText(parametersResponseJson.getValues().getLeSeatCushion());
-            TrainingWeightText.getValueFactory().setValue(Double.valueOf(parametersResponseJson.getValues().getLeTrainingWeight()));
+            TrainingWeightText.getValueFactory().setValue(Math.round(parametersResponseJson.getValues().getLeTrainingWeight()));
 
             String trainingId = parametersResponseJson.getValues().getTrainingId();
             if (trainingId.startsWith("MT_")) {
@@ -1844,6 +1844,7 @@ public class FXMLDocumentController implements Initializable {
         onHgHubMessage.dispatch(new HgHubMessage(EventMessageType.TRAINING_TIMES, UserAngleFlexion.getValue() + ";" + UserAngleExtension.getValue() + ";" + UserExtensionTime.getValue() + ";" + UserFlexionTime.getValue() + ";" + UserHoldTime.getValue() + ";", null));
         onHgHubMessage.dispatch(new HgHubMessage(EventMessageType.CITIZEN_ID, UserIdText.getText(), null));
         onHgHubMessage.dispatch(new HgHubMessage(EventMessageType.TRAINING_ID, TrainIdText.getText(), null));
+        onHgHubMessage.dispatch(new HgHubMessage(EventMessageType.TRAINING_WEIGHT, null, (float)TrainingWeightText.getValue()));
         onHgHubMessage.dispatch(new HgHubMessage(EventMessageType.START_TRAINING, null, null));
     }
 
@@ -2363,7 +2364,7 @@ public class FXMLDocumentController implements Initializable {
         UserHoldTime.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 60, 2, 1));
         ZeroPositionText.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 72, 0, 1));
         TightPositionText.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 8, 0, 1));
-        TrainingWeightText.setValueFactory(new SpinnerValueFactory.DoubleSpinnerValueFactory(1, 500, 0, 10));
+        TrainingWeightText.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 500, 0, 10));
         CounterweightUserText.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 500, 0, 1));
         SessionNumberText.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 30, 0, 1));
         TrainingNumberText.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 18, 0, 1));

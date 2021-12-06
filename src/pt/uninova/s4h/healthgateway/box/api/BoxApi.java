@@ -80,13 +80,14 @@ public class BoxApi {
         }
     }
 
-    public void uploadTraining(TrainingRequestJson trainingRequestJson) throws BoxApiException {
+    public void uploadTraining(TrainingRequestJson trainingRequestJson, int trainingWeight) throws BoxApiException {
 
         BoxTrainingRequestJson boxTrainingRequestJson = new BoxTrainingRequestJson();
         boxTrainingRequestJson.setTimestamp(trainingRequestJson.getStartTime()/1000);
         boxTrainingRequestJson.setLength((trainingRequestJson.getStopTime()-trainingRequestJson.getStartTime())/1000);
         boxTrainingRequestJson.setScore(trainingRequestJson.getScore().getPercentage());
         boxTrainingRequestJson.setRepetitions(trainingRequestJson.getRepetitions());
+        boxTrainingRequestJson.setWeight(trainingWeight);
         
         BoxTrainingGsonUtil boxTrainingGsonUtil = new BoxTrainingGsonUtil();
 

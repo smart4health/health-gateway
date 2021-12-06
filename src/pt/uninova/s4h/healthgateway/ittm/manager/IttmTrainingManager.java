@@ -28,6 +28,7 @@ public class IttmTrainingManager {
     private EventMessageType trainingStatus;
     private ArrayList<SensorData> sensorDataList;
     private TrainingRequestJson trainingRequestJson;
+    private int trainingWeight;
 
     private static IttmTrainingManager ittmTrainingManager = null;
 
@@ -69,6 +70,10 @@ public class IttmTrainingManager {
         trainingStatus = EventMessageType.TRAINING_ID;
     }
 
+    public void newTrainingWeight(float trainingweight) {
+        trainingWeight = (int)trainingweight;
+    }    
+    
     public void newStartTrainig() {
         if (trainingStatus == EventMessageType.START_TRAINING) {
             return;
@@ -120,7 +125,7 @@ public class IttmTrainingManager {
         }
         ITTM_MANAGER_LOGGER.info("Finish training");
         try {            
-            BoxApi.getInstance().uploadTraining(trainingRequestJson);
+            BoxApi.getInstance().uploadTraining(trainingRequestJson,trainingWeight);
         } catch (BoxApiException ex) {
             ITTM_MANAGER_LOGGER.error(ex.getMessage());
         }

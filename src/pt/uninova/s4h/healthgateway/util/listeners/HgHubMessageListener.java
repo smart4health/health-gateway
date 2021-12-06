@@ -45,6 +45,9 @@ public class HgHubMessageListener implements EventListener<HgHubMessage> {
             case STOP_TRAINING:
                 ittmTrainingManager.newStopTraining();
                 break;
+            case TRAINING_WEIGHT:
+                ittmTrainingManager.newTrainingWeight(e.getValue());
+                break;                
         }
         
         if (hgMqttClient == null) {
