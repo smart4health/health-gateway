@@ -56,6 +56,7 @@ public interface MessagesUtil {
         CITIZEN_ID,
         TRAINING_ID,
         TRAINING_TIMES,
+        TRAINING_WEIGHT,
         TRAINING_SCORE,
         FINISH_TRAINING,
         UPLOAD_TRAINING,
