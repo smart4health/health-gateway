@@ -20,7 +20,7 @@ The Health Gateway was built within the Smart4Health project and works together 
 
 ### Libraries
 
-The Health Gateway depends on the following java libraries that must be in the project root `lib` folder
+The Health Gateway depends on the following java libraries that must be in the `lib` folder in the project root:
 - JavaFx 13
 - Logback 1.2.3
 - Slf4j api 1.7.28
