@@ -26,10 +26,6 @@ import pt.uninova.s4h.healthgateway.ittm.message.training.TrainingResponseJson;
 
 /**
  * Class to define an ITTM API Interface.
- *
- * @author Vasco Delgado-Gomes
- * @email vmdg@uninova.pt
- * @version 10 October 2019 - First version.
  */
 public class IttmApi {
 
@@ -43,8 +39,6 @@ public class IttmApi {
     private final String hostUrl;
     private final String machineId;
     private final String directory;
-    //private String username = "";
-    //private String password = "";
     private String token = INVALID_TOKEN;
 
     private static IttmApi ittmApi = null;
@@ -203,24 +197,6 @@ public class IttmApi {
         return this.token;
     }
 
-//    public ParametersResponseJson downloadTrainingParameters(String citizenId) throws IttmApiException, IttmApiTokenException {
-//
-//        if (token.equalsIgnoreCase(INVALID_TOKEN)) {
-//            throw new IttmApiTokenException();
-//        }
-//
-//        ParametersRequestJson parametersRequestJson = new ParametersRequestJson();
-//        parametersRequestJson.setCitizenId(citizenId);
-//        ParametersResponseJson parametersResponseJson = ittmApi.retrieveTrainingParameters(token, parametersRequestJson);
-//        if (parametersResponseJson.getStatusCode() == 401 || parametersResponseJson.getStatusCode() == 403) {
-//            throw new IttmApiTokenException();
-//        }
-//
-//        if (parametersResponseJson.getStatusCode() != 200) {
-//            throw new IttmApiException("Error Retrieving Training Parameters: Status " + parametersResponseJson.getStatusCode() + " = " + parametersResponseJson.getMessage());
-//        }
-//        return parametersResponseJson;
-//    }
     public ParametersResponseJson downloadTrainingParametersLatest() throws IttmApiException, IttmApiTokenException, IttmApi500Exception {
 
         if (token.equalsIgnoreCase(INVALID_TOKEN)) {
@@ -309,71 +285,4 @@ public class IttmApi {
         }
     }    
 
-    /**
-     * *
-     * Old functions
-     */
-//    private IttmApi(String hostUrl, String username, String password) {
-//        this.hostUrl = hostUrl;
-//        this.username = username;
-//        this.password = password;
-//    }
-//
-//    public static synchronized IttmApi getFirstInstance(String hostUrl, String username, String password) {
-//        if (ittmApi == null) {
-//            ittmApi = new IttmApi(hostUrl, username, password);
-//        }
-//        return ittmApi;
-//    }
-//    private String loginNoToken() throws IttmApiException {
-//
-//        LoginRequestJson loginRequestJson = new LoginRequestJson();
-//        loginRequestJson.setUsername(username);
-//        loginRequestJson.setPassword(password);
-//
-//        LoginResponseJson loginResponseJson = doLogin(loginRequestJson);
-//
-//        String token = loginResponseJson.getValues().getToken();
-//
-//        if (loginResponseJson.getStatusCode() != 200 || token.equalsIgnoreCase(INVALID_TOKEN)) {
-//            throw new IttmApiException("Error doLogin: Status " + loginResponseJson.getStatusCode() + " = Internal Server Error");
-//        }
-//
-//        ITTM_API_LOGGER.debug("token = " + token);
-//        return token;
-//    }
-//
-//    public ParametersResponseJson downloadTrainingParametersNoToken(String citizenId) throws IttmApiException {
-//
-//        String token = this.loginNoToken();
-//
-//        ParametersRequestJson parametersRequestJson = new ParametersRequestJson();
-//        parametersRequestJson.setCitizenId(citizenId);
-//        ParametersResponseJson parametersResponseJson = ittmApi.retrieveTrainingParameters(token, parametersRequestJson);
-//        if (parametersResponseJson.getStatusCode() != 200) {
-//            throw new IttmApiException("Error Retrieving Training Parameters: Status " + parametersResponseJson.getStatusCode() + " = " + parametersResponseJson.getMessage());
-//
-//        }
-//        return parametersResponseJson;
-//    }
-//
-//    public void uploadForceTestNoToken(ForceTestRequestJson forceTestRequestJson) throws IttmApiException {
-//
-//        String token = this.loginNoToken();
-//
-//        ForceTestResponseJson forceTestResponseJson = ittmApi.addSensorDataForceTest(token, forceTestRequestJson);
-//        if (forceTestResponseJson.getStatusCode() != 200) {
-//            throw new IttmApiException("Error Uploading Force Test: Status " + forceTestResponseJson.getStatusCode() + " = " + forceTestResponseJson.getMessage());
-//        }
-//    }
-//
-//    public void uploadTrainingDataNoToken(TrainingRequestJson trainingRequestJson) throws IttmApiException {
-//
-//        String token = this.loginNoToken();
-//
-//        TrainingResponseJson trainingResponseJson = ittmApi.addSensorDataMachine(token, trainingRequestJson);
-//        if (trainingResponseJson.getStatusCode() != 200) {
-//            throw new IttmApiException("Error Uploading Training Data: Status " + trainingResponseJson.getStatusCode() + " = " + trainingResponseJson.getMessage());
-//        }
-//    }
 }

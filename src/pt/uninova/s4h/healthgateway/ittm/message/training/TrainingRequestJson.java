@@ -4,10 +4,6 @@ import com.google.gson.annotations.SerializedName;
 
 /**
  * Class to hold the Training Json file to be sent to the ITTM servers.
- *
- * @author Vasco Delgado-Gomes
- * @email vmdg@uninova.pt
- * @version 10 October 2019 - First version.
  */
 public class TrainingRequestJson {
 
@@ -29,6 +25,15 @@ public class TrainingRequestJson {
     @SerializedName("repetitions")
     private int repetitions;
 
+    @SerializedName("training_weight")
+    private int trainingWeight;    
+
+    @SerializedName("training_number")
+    private int trainingNumber; 
+    
+    @SerializedName("training_session")
+    private int trainingSession;     
+    
     @SerializedName("score")
     private Score score;
 
@@ -83,6 +88,30 @@ public class TrainingRequestJson {
         this.repetitions = repetitions;
     }
 
+    public int getTrainingWeight() {
+        return trainingWeight;
+    }
+
+    public void setTrainingWeight(int trainingWeight) {
+        this.trainingWeight = trainingWeight;
+    }    
+    
+    public int getTrainingNumber() {
+        return trainingNumber;
+    }
+
+    public void setTrainingNumber(int trainingNumber) {
+        this.trainingNumber = trainingNumber;
+    }      
+    
+    public int getTrainingSession() {
+        return trainingSession;
+    }
+
+    public void setTrainingSession(int trainingSession) {
+        this.trainingSession = trainingSession;
+    }      
+    
     public Score getScore() {
         return score;
     }

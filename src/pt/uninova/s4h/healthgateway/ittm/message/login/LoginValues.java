@@ -4,10 +4,6 @@ import com.google.gson.annotations.SerializedName;
 
 /**
  * Class to hold a LoginValues Response received in the MQTT topics.
- *
- * @author Vasco Delgado-Gomes
- * @email vmdg@uninova.pt
- * @version 10 October 2019 - First version.
  */
 public class LoginValues {
 

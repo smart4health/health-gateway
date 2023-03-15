@@ -5,10 +5,6 @@ import java.util.LinkedList;
 
 /**
  * Class to dispatch message events.
- *
- * @author Vasco Delgado-Gomes
- * @email vmdg@uninova.pt
- * @version 27 May 2020 - First version.
  */
 public class EventDispatcher<T> {
 

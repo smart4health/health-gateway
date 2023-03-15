@@ -3,13 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/fabio/Drive%20FCT/CTS-FJ/S4H/BHealth/health-gateway-LE-2.1.0/src/pt/uninova/s4h/healthgateway/ittm/api/IttmApi.java</file>
-            <file>file:/C:/Users/fabio/Drive%20FCT/CTS-FJ/S4H/BHealth/health-gateway-LE-2.1.0/src/HealthGatewayConfig.properties</file>
-            <file>file:/C:/Users/fabio/Drive%20FCT/CTS-FJ/S4H/BHealth/health-gateway-LE-2.1.0/src/pt/uninova/s4h/healthgateway/box/api/BoxApi.java</file>
-            <file>file:/C:/Users/fabio/Drive%20FCT/CTS-FJ/S4H/BHealth/health-gateway-LE-2.1.0/src/pt/uninova/s4h/healthgateway/util/listeners/HgHubMessageListener.java</file>
-            <file>file:/C:/Users/fabio/Drive%20FCT/CTS-FJ/S4H/BHealth/health-gateway-LE-2.1.0/src/pt/uninova/s4h/healthgateway/ittm/manager/IttmTrainingManager.java</file>
-            <file>file:/C:/Users/fabio/Drive%20FCT/CTS-FJ/S4H/BHealth/health-gateway-LE-2.1.0/src/pt/uninova/s4h/healthgateway/main/HealthGatewayMain.java</file>
-            <file>file:/C:/Users/fabio/Drive%20FCT/CTS-FJ/S4H/BHealth/health-gateway-LE-2.1.0/src/pt/uninova/s4h/healthgateway/box/message/BoxTrainingRequestJson.java</file>
+            <file>file:/C:/Users/fabio/Drive%20FCT/CTS-FJ/S4H/BHealth/health-gateway-LE-2.2.0/src/HealthGatewayConfig.properties</file>
         </group>
     </open-files>
 </project-private>

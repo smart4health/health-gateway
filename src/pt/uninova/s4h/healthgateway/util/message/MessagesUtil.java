@@ -2,10 +2,6 @@ package pt.uninova.s4h.healthgateway.util.message;
 
 /**
  * Interface to hold useful information.
- *
- * @author Vasco Delgado-Gomes
- * @email vmdg@uninova.pt
- * @version 29 May 2020 - First version.
  */
 public interface MessagesUtil {
 
@@ -28,7 +24,7 @@ public interface MessagesUtil {
         COMM_PORTS_RESPONSE,
         CONNECTION_REQUEST,
         CONNECTION_RESPONSE,
-        // Serial -> GUI events
+        // b-health -> GUI events
         AUTO_CONNECTION_RESPONSE,
         COMMUNICATION_ERROR,
         FLEXION_ANGLE,
@@ -46,7 +42,7 @@ public interface MessagesUtil {
         STOP,
         STOP_CONF,
         BUTTON,
-        // GUI -> Serial events
+        // GUI -> b-health events
         AUTO_CONNECTION_REQUEST,
         DISCONNECT,
         EXERCISE,
@@ -55,6 +51,8 @@ public interface MessagesUtil {
         STOP_TRAINING,
         CITIZEN_ID,
         TRAINING_ID,
+        TRAINING_NUMBER,
+        TRAINING_SESSION,
         TRAINING_TIMES,
         TRAINING_WEIGHT,
         TRAINING_SCORE,

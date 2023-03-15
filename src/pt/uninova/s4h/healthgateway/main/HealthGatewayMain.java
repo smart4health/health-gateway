@@ -16,10 +16,6 @@ import pt.uninova.s4h.healthgateway.util.logging.LoggerUtils;
 
 /**
  * Main class of the Health Gateway project.
- *
- * @author Vasco Delgado-Gomes
- * @email vmdg@uninova.pt
- * @version 31 May 2020 - First version.
  */
 public class HealthGatewayMain {
 
@@ -51,10 +47,8 @@ public class HealthGatewayMain {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws IOException {
-        // TODO code application logic here
         Properties prop = new Properties();
         try {
-
             boolean deployment = false;
             String saveDirectory;
             String jarLocation = new File(HealthGatewayMain.class.getProtectionDomain().getCodeSource().getLocation().toURI().getPath()).getParent();
@@ -63,7 +57,6 @@ public class HealthGatewayMain {
             } else {
                 prop.load(new FileInputStream(jarLocation + "\\" + PROP_FILE_NAME));
             }
-
             String loggingLevel = prop.getProperty(LOGGING_LEVEL);
             String mqttSubscribeTopics = prop.getProperty(MQTT_SUBSCRIBE_TOPICS);
             String mqttPublishTopic = prop.getProperty(MQTT_PUBLISH_TOPIC);
@@ -75,10 +68,7 @@ public class HealthGatewayMain {
             String hubSensorization = prop.getProperty(HUB_SENSORIZATION);
             String loadcell = prop.getProperty(LOAD_CELL);
             String boxHost = prop.getProperty(BOX_HOST);
-            
-            //LoggerUtils.setRootLoggingConsole(Level.toLevel(loggingLevel, Level.WARN));
             LoggerUtils.setRootLoggingConsoleAndFile(Level.toLevel(loggingLevel, Level.WARN), Level.WARN);
-
             MAIN_LOGGER.info(LOGGING_LEVEL + " = " + loggingLevel);
             MAIN_LOGGER.info(MQTT_SUBSCRIBE_TOPICS + " = " + mqttSubscribeTopics);
             MAIN_LOGGER.info(MQTT_PUBLISH_TOPIC + " = " + mqttPublishTopic);
@@ -90,7 +80,6 @@ public class HealthGatewayMain {
             MAIN_LOGGER.info(HUB_SENSORIZATION + " = " + hubSensorization);
             MAIN_LOGGER.info(LOAD_CELL + " = " + loadcell);
             MAIN_LOGGER.info(BOX_HOST + " = " + boxHost);
-
             String OS = (System.getProperty("os.name")).toUpperCase();
             if (OS.contains("WIN")) {
                 saveDirectory = System.getenv("APPDATA") + "\\HG_Files\\";
@@ -107,11 +96,9 @@ public class HealthGatewayMain {
                 }
             }
             MAIN_LOGGER.debug("The current working directory is " + saveDirectory);
-            
             HgMqttClient.getFirstInstance(mqttSubscribeTopics.split(";"), mqttPublishTopic, mqttBrokerUrl, mqttClientId, saveDirectory);
             IttmApi.getFirstInstance(ittmHost, ittmMachineID, saveDirectory);
             BoxApi.getFirstInstance(boxHost);
-
             PhysiotherapyGui gui = new PhysiotherapyGui();
             gui.setParm(ittmMachineID,hubSensorization,loadcell,saveDirectory);
             gui.main(args);

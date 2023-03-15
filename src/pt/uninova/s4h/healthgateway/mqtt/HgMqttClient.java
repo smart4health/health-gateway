@@ -2,7 +2,6 @@ package pt.uninova.s4h.healthgateway.mqtt;
 
 import java.lang.invoke.MethodHandles;
 import org.eclipse.paho.client.mqttv3.IMqttDeliveryToken;
-import org.eclipse.paho.client.mqttv3.MqttCallback;
 import org.eclipse.paho.client.mqttv3.MqttCallbackExtended;
 import org.eclipse.paho.client.mqttv3.MqttClient;
 import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
@@ -18,15 +17,10 @@ import pt.uninova.s4h.healthgateway.util.message.MessagesUtil.EventMessageType;
 
 /**
  * Class to implement a MQTT client.
- *
- * @author Vasco Delgado-Gomes
- * @email vmdg@uninova.pt
- * @version 07 September 2019 - First version.
  */
 public class HgMqttClient implements MqttCallbackExtended {
 
     private static final ch.qos.logback.classic.Logger HG_MQTT_LOGGER = (ch.qos.logback.classic.Logger) LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
-
     private final String directory;
     private final String mqttPublishTopic;
     private final String[] mqttSubscribeTopics;
@@ -34,9 +28,7 @@ public class HgMqttClient implements MqttCallbackExtended {
     private final String mqttClientId;
     private MedxGsonUtil medxGsonUtil = null;
     private MqttClient mqttClient = null;
-
     private static HgMqttClient hgMqttClient = null;
-
     private final EventDispatcher<HubHgMessage> onHubHgMessage;
 
     public EventDispatcher<HubHgMessage> onHubHgMessage() {
@@ -65,21 +57,15 @@ public class HgMqttClient implements MqttCallbackExtended {
     }
 
     public void initialise() throws HgMqttClientException {
-
         try {
             MqttDefaultFilePersistence mqttDefaultFilePersistence = new MqttDefaultFilePersistence(directory);
             mqttClient = new MqttClient(mqttBrokerUrl, mqttClientId, null);//mqttDefaultFilePersistence);
             mqttClient.setCallback(this);
-            /**
-             * This is necessary to avoid "too many publishes in progress" error
-             * message Default value is 10.
-             */
             MqttConnectOptions mqttConnectOptions = new MqttConnectOptions();
             mqttConnectOptions.setMaxInflight(100000);
             mqttConnectOptions.setCleanSession(true);
             mqttConnectOptions.setAutomaticReconnect(true);
             mqttClient.connect(mqttConnectOptions);
-
         } catch (MqttException ex) {
             HG_MQTT_LOGGER.error("Error starting MEDX MQTT Client= " + ex.getMessage());
             throw new HgMqttClientException(ex.getMessage());
@@ -88,11 +74,9 @@ public class HgMqttClient implements MqttCallbackExtended {
 
     @Override
     public void messageArrived(String topic, MqttMessage mqttMessage) throws Exception {
-
         String messageString = new String(mqttMessage.getPayload());
         HG_MQTT_LOGGER.debug("New message: " + messageString);
         HG_MQTT_LOGGER.debug("Topic: " + topic);
-
         try {
             MedxEvent[] medxEvents = medxGsonUtil.fromJson(messageString);
             for (MedxEvent medxEvent : medxEvents) {
@@ -119,7 +103,6 @@ public class HgMqttClient implements MqttCallbackExtended {
     @Override
     public void deliveryComplete(IMqttDeliveryToken token) {
         // Not implemented using QoS = 0;
-        //MEDX_MQTT_LOGGER.warn("DeliveryComplete: Token = " + token);
     }
 
     public void stopClient() throws HgMqttClientException {
@@ -144,7 +127,6 @@ public class HgMqttClient implements MqttCallbackExtended {
     public void connectComplete(boolean bln, String string) {
         try {
             for (String mqttSubscribeTopic : mqttSubscribeTopics) {
-
                     HG_MQTT_LOGGER.debug("Subscribing to the following topics:");
                     mqttClient.subscribe(mqttSubscribeTopic);
                     HG_MQTT_LOGGER.info(mqttSubscribeTopic);

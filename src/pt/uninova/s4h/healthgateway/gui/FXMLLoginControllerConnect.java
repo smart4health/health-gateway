@@ -13,10 +13,6 @@ import javafx.stage.Stage;
 
 /**
  * Class to control the login interface and perform user commands.
- *
- * @author Fábio Januário
- * @email faj@uninova.pt
- * @version 10 October 2019 - v1.0.
  */
 
 public class FXMLLoginControllerConnect implements Initializable {
@@ -29,10 +25,8 @@ public class FXMLLoginControllerConnect implements Initializable {
     private Button PasswordCancelButton; 
     @FXML
     private Label passwordLabel;    
-    
     private static final String CONNECT_PASS = "smart4health"; 
     private static FXMLDocumentController GUI;
-    
     private ResourceBundle bundle;
     
     FXMLLoginControllerConnect (FXMLDocumentController controller){

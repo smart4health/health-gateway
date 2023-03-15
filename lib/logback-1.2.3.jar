@@ -2749,3 +2749,1275 @@
 2021-12-06 14:40:02.482 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.mqtt.HgMqttClient - Error publishing MedX Events = Client is not connected
 2021-12-06 15:27:03.080 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.mqtt.HgMqttClient - Error starting MEDX MQTT Client= MqttException
 2021-12-06 15:27:03.081 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - MqttException
+2021-12-20 10:37:59.513 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2021-12-20 10:37:59.514 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2021-12-20 10:38:00.800 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2021-12-20 10:38:00.800 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2021-12-20 10:38:00.809 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Start Button Pressed.
+2021-12-20 10:38:09.842 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
+2021-12-20 10:38:11.019 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Upload Button Pressed: true
+2021-12-20 10:38:11.323 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.box.api.BoxApi - IOException=Server returned HTTP response code: 500 for URL: http://bhealthhub13:9999/api/medx/v1/lumbar-extension/training
+2021-12-20 10:38:11.323 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error reading(writing HTTP request
+2021-12-20 10:38:11.512 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error Uploading Training Data: Status 409 = Duplicate error.
+2021-12-20 10:40:37.414 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2021-12-20 10:40:37.415 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2021-12-20 10:40:39.577 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2021-12-20 10:40:39.578 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2021-12-20 10:40:39.586 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Start Button Pressed.
+2021-12-20 10:40:46.911 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
+2021-12-20 10:40:52.365 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Upload Button Pressed: true
+2021-12-20 10:40:52.814 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error Uploading Training Data: Status 409 = Duplicate error.
+2021-12-20 10:42:04.156 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2021-12-20 10:42:04.158 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2021-12-20 10:51:28.949 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2021-12-20 10:51:28.950 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2021-12-20 10:51:28.965 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Start Button Pressed.
+2021-12-20 10:51:32.210 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
+2021-12-20 10:51:33.242 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Upload Button Pressed: true
+2021-12-20 10:51:33.550 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error Uploading Training Data: Status 409 = Duplicate error.
+2021-12-20 11:09:46.051 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2021-12-20 11:09:46.051 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2021-12-20 11:09:46.063 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Start Button Pressed.
+2021-12-20 11:09:49.798 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
+2021-12-20 11:09:50.515 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Upload Button Pressed: true
+2021-12-20 11:09:50.848 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error Uploading Training Data: Status 409 = Duplicate error.
+2021-12-20 11:14:38.142 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2021-12-20 11:14:38.142 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2021-12-20 11:14:38.151 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Start Button Pressed.
+2021-12-20 11:14:40.799 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
+2021-12-20 11:14:41.326 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Upload Button Pressed: true
+2021-12-20 11:14:41.663 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error Uploading Training Data: Status 409 = Duplicate error.
+2021-12-20 11:15:32.045 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2021-12-20 11:15:32.045 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2021-12-20 11:15:32.051 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Start Button Pressed.
+2021-12-20 11:15:35.351 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
+2021-12-20 11:15:35.923 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Upload Button Pressed: true
+2021-12-20 11:15:36.380 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error Uploading Training Data: Status 409 = Duplicate error.
+2021-12-20 11:18:14.899 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2021-12-20 11:18:14.899 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2021-12-20 11:18:14.906 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Start Button Pressed.
+2021-12-20 11:18:16.576 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
+2021-12-20 11:18:18.045 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Upload Button Pressed: true
+2021-12-20 11:18:18.355 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error Uploading Training Data: Status 409 = Duplicate error.
+2021-12-20 11:24:45.975 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2021-12-20 11:24:45.976 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2021-12-20 11:24:45.981 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Start Button Pressed.
+2021-12-20 11:24:48.545 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
+2021-12-20 11:24:49.636 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Upload Button Pressed: true
+2021-12-20 11:24:49.947 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error Uploading Training Data: Status 409 = Duplicate error.
+2021-12-20 11:30:21.700 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2021-12-20 11:30:21.700 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2021-12-20 11:30:21.714 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Start Button Pressed.
+2021-12-20 11:30:24.165 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
+2021-12-20 11:30:24.950 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Upload Button Pressed: true
+2021-12-20 11:30:25.254 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error Uploading Training Data: Status 409 = Duplicate error.
+2021-12-20 12:14:27.768 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2021-12-20 12:14:27.768 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2021-12-20 12:14:27.776 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Start Button Pressed.
+2021-12-20 12:14:30.804 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
+2021-12-20 12:14:31.543 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Upload Button Pressed: true
+2021-12-20 12:14:31.875 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error Uploading Training Data: Status 409 = Duplicate error.
+2021-12-20 12:26:24.938 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2021-12-20 12:26:24.938 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2021-12-20 12:26:24.945 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Start Button Pressed.
+2021-12-20 12:26:26.197 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
+2021-12-20 12:26:26.694 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Upload Button Pressed: true
+2021-12-20 12:26:26.996 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error Uploading Training Data: Status 409 = Duplicate error.
+2021-12-20 12:28:16.391 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2021-12-20 12:28:16.391 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2021-12-20 12:28:16.401 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Start Button Pressed.
+2021-12-20 12:28:17.488 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
+2021-12-20 12:28:17.980 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Upload Button Pressed: true
+2021-12-20 12:28:18.453 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error Uploading Training Data: Status 409 = Duplicate error.
+2021-12-20 12:33:11.418 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2021-12-20 12:33:11.418 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2021-12-20 12:33:11.427 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Start Button Pressed.
+2021-12-20 12:33:14.768 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
+2021-12-20 12:33:17.984 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Upload Button Pressed: true
+2021-12-20 12:33:18.424 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error Uploading Training Data: Status 409 = Duplicate error.
+2021-12-20 13:44:10.842 [MQTT Rec: HealthGatewayMqttClient] ERROR pt.uninova.s4h.healthgateway.mqtt.HgMqttClient - The MQTT connection is lost = Connection lost
+2022-01-05 16:49:50.397 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2022-01-05 16:49:50.398 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2022-01-05 16:49:51.537 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2022-01-05 16:49:51.538 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2022-01-05 16:49:51.547 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Start Button Pressed.
+2022-01-05 16:49:55.093 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
+2022-01-05 16:49:56.136 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Upload Button Pressed: true
+2022-01-05 16:49:56.515 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error Uploading Training Data: Status 409 = Duplicate error.
+2022-01-05 16:52:14.519 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2022-01-05 16:52:14.520 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2022-01-05 16:52:14.529 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Start Button Pressed.
+2022-01-05 16:52:22.615 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
+2022-01-05 16:52:25.469 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Upload Button Pressed: true
+2022-01-05 16:52:25.906 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error Uploading Training Data: Status 409 = Duplicate error.
+2022-01-05 17:06:17.774 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2022-01-05 17:06:17.774 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2022-01-05 17:06:17.782 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Start Button Pressed.
+2022-01-05 17:06:23.110 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
+2022-01-05 17:06:23.950 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Upload Button Pressed: true
+2022-01-05 17:06:24.555 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error Uploading Training Data: Status 409 = Duplicate error.
+2022-01-05 17:08:38.869 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2022-01-05 17:08:38.870 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2022-01-05 17:08:38.876 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Start Button Pressed.
+2022-01-05 17:08:42.066 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
+2022-01-05 17:08:43.289 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Upload Button Pressed: true
+2022-01-05 17:08:43.769 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error Uploading Training Data: Status 409 = Duplicate error.
+2022-01-10 11:19:32.236 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2022-01-10 11:19:32.240 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2022-01-10 11:22:48.504 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2022-01-10 11:22:48.505 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2022-01-10 11:24:38.772 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2022-01-10 11:24:38.774 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2022-01-10 11:24:51.995 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2022-01-10 11:24:51.996 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2022-01-10 11:24:52.022 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Start Button Pressed.
+2022-01-10 11:25:11.763 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
+2022-01-10 11:25:18.769 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Upload Button Pressed: true
+2022-01-10 11:25:20.829 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error Uploading Training Data: Status 409 = Duplicate error.
+2022-01-10 11:27:24.646 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2022-01-10 11:27:24.647 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2022-01-10 11:27:24.673 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Start Button Pressed.
+2022-01-10 11:27:27.885 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
+2022-01-10 11:27:29.002 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Upload Button Pressed: true
+2022-01-10 11:27:31.899 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error Uploading Training Data: Status 409 = Duplicate error.
+2022-01-10 11:29:43.624 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2022-01-10 11:29:43.626 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2022-01-10 11:29:43.647 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Start Button Pressed.
+2022-01-10 11:30:09.389 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
+2022-01-10 11:30:11.327 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Upload Button Pressed: true
+2022-01-10 11:30:13.034 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error Uploading Training Data: Status 409 = Duplicate error.
+2022-01-10 11:36:00.004 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2022-01-10 11:36:00.005 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2022-01-10 11:36:00.038 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Start Button Pressed.
+2022-01-10 11:36:26.370 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
+2022-01-10 11:36:31.607 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Upload Button Pressed: true
+2022-01-10 11:36:33.175 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error Uploading Training Data: Status 409 = Duplicate error.
+2022-01-10 11:38:18.318 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2022-01-10 11:38:18.320 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2022-01-10 11:40:48.194 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2022-01-10 11:40:48.194 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2022-01-10 11:40:48.203 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Start Button Pressed.
+2022-01-10 11:40:51.903 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
+2022-01-10 11:40:55.448 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Upload Button Pressed: true
+2022-01-10 11:40:58.284 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error Uploading Training Data: Status 409 = Duplicate error.
+2022-01-10 11:47:32.183 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2022-01-10 11:47:32.184 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2022-01-10 11:47:32.206 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Start Button Pressed.
+2022-01-10 11:47:46.987 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
+2022-01-10 11:47:49.193 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Upload Button Pressed: true
+2022-01-10 11:47:51.505 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.box.api.BoxApi - IOException=Server returned HTTP response code: 503 for URL: http://bhealthhub13:9999/api/medx/v1/lumbar-extension/training
+2022-01-10 11:47:51.505 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error reading(writing HTTP request
+2022-01-10 11:47:51.770 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error Uploading Training Data: Status 409 = Duplicate error.
+2022-01-14 22:08:17.778 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2022-01-14 22:08:17.780 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2022-01-14 22:08:19.128 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2022-01-14 22:08:19.129 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2022-01-14 22:08:19.140 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Start Button Pressed.
+2022-01-14 22:08:23.084 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
+2022-01-14 22:08:24.930 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2022-01-14 22:08:24.931 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2022-01-14 22:08:24.940 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Start Button Pressed.
+2022-01-14 22:08:29.709 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
+2022-01-14 22:08:30.685 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Upload Button Pressed: true
+2022-01-14 22:08:32.721 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.box.api.BoxApi - IOException=Connection refused: connect
+2022-01-14 22:08:32.721 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error reading(writing HTTP request
+2022-01-14 22:08:32.896 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error Uploading Training Data: Status 409 = Duplicate error.
+2022-01-14 22:21:31.045 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2022-01-14 22:21:31.045 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2022-01-14 22:21:31.053 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Start Button Pressed.
+2022-01-14 22:21:33.249 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
+2022-01-14 22:21:34.395 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Upload Button Pressed: true
+2022-01-14 22:21:36.452 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.box.api.BoxApi - IOException=Connection refused: connect
+2022-01-14 22:21:36.452 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error reading(writing HTTP request
+2022-01-14 22:21:36.624 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error Uploading Training Data: Status 409 = Duplicate error.
+2022-01-14 22:22:43.750 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2022-01-14 22:22:43.750 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2022-01-14 22:22:43.757 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Start Button Pressed.
+2022-01-14 22:22:45.577 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
+2022-01-14 22:22:46.249 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Upload Button Pressed: true
+2022-01-14 22:22:46.596 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error Uploading Training Data: Status 409 = Duplicate error.
+2022-01-14 22:23:54.021 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2022-01-14 22:23:54.022 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2022-01-14 22:23:54.030 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Start Button Pressed.
+2022-01-14 22:23:56.159 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
+2022-01-14 22:23:57.192 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Upload Button Pressed: true
+2022-01-14 22:23:57.520 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error Uploading Training Data: Status 409 = Duplicate error.
+2022-01-14 22:35:19.819 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2022-01-14 22:35:19.820 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2022-01-14 22:35:19.827 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Start Button Pressed.
+2022-01-14 22:35:24.086 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
+2022-01-14 22:35:24.939 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Upload Button Pressed: true
+2022-01-14 22:35:25.356 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error Uploading Training Data: Status 409 = Duplicate error.
+2022-01-14 22:37:11.429 [MQTT Rec: HealthGatewayMqttClient] ERROR pt.uninova.s4h.healthgateway.mqtt.HgMqttClient - The MQTT connection is lost = Connection lost
+2022-01-14 22:37:16.894 [Timer-1] ERROR pt.uninova.s4h.healthgateway.mqtt.HgMqttClient - Error publishing MedX Events = Client is not connected
+2022-01-14 22:39:03.820 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2022-01-14 22:39:03.820 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2022-01-14 22:39:04.762 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2022-01-14 22:39:04.762 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2022-01-14 22:39:04.776 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Start Button Pressed.
+2022-01-14 22:39:11.843 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
+2022-01-14 22:39:12.392 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Upload Button Pressed: true
+2022-01-14 22:39:14.422 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.box.api.BoxApi - IOException=Connection refused: connect
+2022-01-14 22:39:14.423 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error reading(writing HTTP request
+2022-01-14 22:39:14.595 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error Uploading Training Data: Status 409 = Duplicate error.
+2022-01-14 22:45:14.236 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2022-01-14 22:45:14.236 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2022-01-14 22:45:14.242 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Start Button Pressed.
+2022-01-14 22:45:24.365 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
+2022-01-14 22:45:25.396 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Upload Button Pressed: true
+2022-01-14 22:45:27.440 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.box.api.BoxApi - IOException=Connection refused: connect
+2022-01-14 22:45:27.440 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error reading(writing HTTP request
+2022-01-14 22:45:27.615 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error Uploading Training Data: Status 409 = Duplicate error.
+2022-01-14 22:48:24.463 [MQTT Rec: HealthGatewayMqttClient] ERROR pt.uninova.s4h.healthgateway.mqtt.HgMqttClient - The MQTT connection is lost = Connection lost
+2022-01-14 22:48:32.927 [Timer-3] ERROR pt.uninova.s4h.healthgateway.mqtt.HgMqttClient - Error publishing MedX Events = Client is not connected
+2022-01-14 22:53:18.471 [MQTT Rec: HealthGatewayMqttClient] ERROR pt.uninova.s4h.healthgateway.mqtt.HgMqttClient - The MQTT connection is lost = Connection lost
+2022-01-14 22:54:36.078 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2022-01-14 22:54:36.078 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2022-01-14 22:54:37.075 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2022-01-14 22:54:37.075 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2022-01-14 22:54:37.154 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Start Button Pressed.
+2022-01-14 22:54:40.149 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
+2022-01-14 22:54:40.676 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Upload Button Pressed: true
+2022-01-14 22:54:41.008 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error Uploading Training Data: Status 409 = Duplicate error.
+2022-01-14 22:58:13.951 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2022-01-14 22:58:13.951 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2022-01-14 22:58:13.957 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Start Button Pressed.
+2022-01-14 22:58:14.800 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
+2022-01-14 22:58:15.664 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Upload Button Pressed: true
+2022-01-14 22:58:15.995 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error Uploading Training Data: Status 409 = Duplicate error.
+2022-01-14 22:59:22.639 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2022-01-14 22:59:22.639 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2022-01-14 22:59:22.645 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Start Button Pressed.
+2022-01-14 22:59:26.508 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
+2022-01-14 22:59:27.438 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Upload Button Pressed: true
+2022-01-14 22:59:27.876 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error Uploading Training Data: Status 409 = Duplicate error.
+2022-01-14 23:12:20.067 [MQTT Rec: HealthGatewayMqttClient] ERROR pt.uninova.s4h.healthgateway.mqtt.HgMqttClient - The MQTT connection is lost = Connection lost
+2022-01-14 23:12:25.172 [Timer-5] ERROR pt.uninova.s4h.healthgateway.mqtt.HgMqttClient - Error publishing MedX Events = Client is not connected
+2022-01-16 15:19:47.890 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2022-01-16 15:19:47.891 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2022-01-16 15:19:50.592 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2022-01-16 15:19:50.593 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2022-01-16 15:19:50.601 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Start Button Pressed.
+2022-01-16 15:19:53.579 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
+2022-01-16 15:19:56.028 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Upload Button Pressed: true
+2022-01-16 15:19:56.521 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error Uploading Training Data: Status 409 = Duplicate error.
+2022-01-16 15:23:08.591 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2022-01-16 15:23:08.592 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2022-01-16 15:23:11.183 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2022-01-16 15:23:11.184 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2022-01-16 15:23:11.196 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Start Button Pressed.
+2022-01-16 15:23:17.758 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
+2022-01-16 15:23:18.602 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Upload Button Pressed: true
+2022-01-16 15:23:19.027 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error Uploading Training Data: Status 409 = Duplicate error.
+2022-02-09 19:03:46.499 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2022-02-09 19:03:46.510 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2022-02-09 19:03:52.588 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2022-02-09 19:03:52.588 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_42ae8190-ed8f-4068-a1a3-e163f44ac68b",
+    "training_ID": "MT_94c7752b-cfa4-4662-989a-8de649655eff",
+    "session_number": 1,
+    "training_number": 1,
+    "LE_counterweight": 100.0,
+    "LE_trainingweight": 78.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 18,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2021-09-09 07:23:59.448000",
+    "measurement_date": "2021-09-09"
+  }
+}
+2022-02-09 19:03:52.598 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Start Button Pressed.
+2022-02-09 19:03:56.613 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
+2022-02-09 19:03:58.029 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Upload Button Pressed: true
+2022-02-09 19:03:58.493 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error Uploading Training Data: Status 409 = Duplicate error.
+2022-02-09 19:05:01.143 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Error Retrieving Training Parameters: Status 500 = Retrieval error.
+ Make login
+2022-02-09 19:06:44.646 [MQTT Rec: HealthGatewayMqttClient] ERROR pt.uninova.s4h.healthgateway.mqtt.HgMqttClient - The MQTT connection is lost = Connection lost
+2022-02-09 19:06:49.679 [Timer-1] ERROR pt.uninova.s4h.healthgateway.mqtt.HgMqttClient - Error publishing MedX Events = Client is not connected
+2022-02-10 00:17:05.820 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.mqtt.HgMqttClient - Error publishing MedX Events = Client is not connected
+2022-02-10 11:28:29.929 [MQTT Rec: HealthGatewayMqttClient] ERROR pt.uninova.s4h.healthgateway.mqtt.HgMqttClient - The MQTT connection is lost = Connection lost
+2022-02-10 11:28:38.911 [Timer-1] ERROR pt.uninova.s4h.healthgateway.mqtt.HgMqttClient - Error publishing MedX Events = Client is not connected
+2022-02-10 11:31:17.789 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.mqtt.HgMqttClient - Error publishing MedX Events = Client is not connected
+2022-02-10 11:31:39.321 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.mqtt.HgMqttClient - Error publishing MedX Events = Client is not connected
+2022-02-10 11:31:41.940 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.mqtt.HgMqttClient - Error publishing MedX Events = Client is not connected
+2022-02-10 11:31:47.449 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.mqtt.HgMqttClient - Error starting MEDX MQTT Client= MqttException
+2022-02-10 11:31:47.454 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - MqttException
+2022-02-10 11:32:56.459 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.mqtt.HgMqttClient - Error starting MEDX MQTT Client= MqttException
+2022-02-10 11:32:56.464 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - MqttException
+2022-02-10 11:39:27.205 [MQTT Rec: HealthGatewayMqttClient] ERROR pt.uninova.s4h.healthgateway.mqtt.HgMqttClient - The MQTT connection is lost = Connection lost
+2022-02-10 11:39:27.536 [Timer-1] ERROR pt.uninova.s4h.healthgateway.mqtt.HgMqttClient - Error publishing MedX Events = Client is not connected
+2022-02-10 12:41:57.159 [MQTT Rec: HealthGatewayMqttClient] ERROR pt.uninova.s4h.healthgateway.mqtt.HgMqttClient - The MQTT connection is lost = Connection lost
+2022-02-10 12:42:05.543 [Timer-1] ERROR pt.uninova.s4h.healthgateway.mqtt.HgMqttClient - Error publishing MedX Events = Client is not connected
+2022-02-10 15:17:32.308 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.mqtt.HgMqttClient - Error publishing MedX Events = Client is not connected
+2022-02-17 15:53:21.631 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2022-02-17 15:53:21.635 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_9bd80803-e5c1-439f-8519-869fa0e777dc",
+    "training_ID": "MT_49a1542b-f147-4394-a548-cd616a79d3a5",
+    "session_number": 1,
+    "training_number": 4,
+    "LE_counterweight": 123.0,
+    "LE_trainingweight": 200.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 45,
+    "LE_zeroposition": 10,
+    "LE_tightposition": 1,
+    "LE_seatcushion": "None",
+    "create_date": "2022-02-10 10:05:18.576000",
+    "measurement_date": "2022-02-10"
+  }
+}
+2022-09-13 16:38:05.054 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2022-09-13 16:38:05.058 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_2b251dc3-4086-4b01-90a6-0565e13e8928",
+    "training_ID": "MT_6a67009b-ef78-4ffb-86c4-7580169b243c",
+    "session_number": 1,
+    "training_number": 14,
+    "LE_counterweight": 133.0,
+    "LE_trainingweight": 98.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 30,
+    "LE_tightposition": 2,
+    "LE_seatcushion": "Nenhum",
+    "create_date": "2022-04-08 15:51:18.869000",
+    "measurement_date": "2022-04-08"
+  }
+}
+2022-09-13 16:38:07.610 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - UpdateUser = Exercise  
+2022-09-13 16:38:07.611 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - {
+  "message": "Data was retrieved.",
+  "statuscode": 200,
+  "values": {
+    "citizen_id": "citizen_2b251dc3-4086-4b01-90a6-0565e13e8928",
+    "training_ID": "MT_6a67009b-ef78-4ffb-86c4-7580169b243c",
+    "session_number": 1,
+    "training_number": 14,
+    "LE_counterweight": 133.0,
+    "LE_trainingweight": 98.0,
+    "LE_ROM_extension": 0,
+    "LE_ROM_flexion": 72,
+    "LE_zeroposition": 30,
+    "LE_tightposition": 2,
+    "LE_seatcushion": "Nenhum",
+    "create_date": "2022-04-08 15:51:18.869000",
+    "measurement_date": "2022-04-08"
+  }
+}
+2022-09-13 16:38:07.623 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Start Button Pressed.
+2022-09-13 16:38:10.469 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Stop Button Pressed.
+2022-09-13 16:38:11.447 [JavaFX Application Thread] WARN pt.uninova.s4h.healthgateway.gui.FXMLDocumentController - Upload Button Pressed: true
+2022-09-13 16:38:11.935 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager - Error Uploading Training Data: Status 409 = Duplicate error.
+2022-09-13 16:38:57.419 [MQTT Rec: HealthGatewayMqttClient] ERROR pt.uninova.s4h.healthgateway.mqtt.HgMqttClient - The MQTT connection is lost = Connection lost
+2022-09-13 16:39:02.871 [Timer-1] ERROR pt.uninova.s4h.healthgateway.mqtt.HgMqttClient - Error publishing MedX Events = Client is not connected
+2022-09-13 16:39:18.013 [JavaFX Application Thread] ERROR pt.uninova.s4h.healthgateway.mqtt.HgMqttClient - Error publishing MedX Events = Client is not connected

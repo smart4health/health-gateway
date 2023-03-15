@@ -2,10 +2,6 @@ package pt.uninova.s4h.healthgateway.util.message;
 
 /**
  * Class to hold Hub to HealthGateway messages.
- *
- * @author Vasco Delgado-Gomes
- * @email vmdg@uninova.pt
- * @version 27 May 2020 - First version.
  */
 public class HubHgMessage {
 
