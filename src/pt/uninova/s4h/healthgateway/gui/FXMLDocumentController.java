@@ -80,10 +80,6 @@ import pt.uninova.s4h.healthgateway.util.message.MessagesUtil.EventMessageType;
 
 /**
  * Class to control the interface and perform user commands.
- *
- * @author Fábio Januário and Vasco Delgado-Gomes
- * @email faj@uninova.pt, vmdg@uninova.pt
- * @version 28 January 2020 - v1.0.
  */
 public class FXMLDocumentController implements Initializable {
     @FXML
@@ -452,25 +448,18 @@ public class FXMLDocumentController implements Initializable {
     private Rectangle HandsCircleR1;      
     @FXML
     private Rectangle BackCircle1;   
-    
     private static final ch.qos.logback.classic.Logger VIEWER_LOGGER = (ch.qos.logback.classic.Logger) LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
-
     private IttmApi ittmApi = null;
-
     private ResourceBundle bundle;
-
     private final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-
     private static String SAVE_DIRECTORY = "";
     private final static String FILENAME = "config.txt";
     private String ittmUser = "";
     private String calibrationTime = "1990-01-01";
-
     private boolean connectLogin = false;
     private Timer timerConnection;
     private boolean connectionRequest = false;
     private final long CONN_DELAY = 10000;
-
     private final int A_FLEXION = (byte) 11;
     private final int A_EXTENSION = (byte) 21;
     private final int A_INT = (byte) 23;
@@ -479,49 +468,36 @@ public class FXMLDocumentController implements Initializable {
     private final int CONNECT = (byte) 52;
     private final int START = (byte) 51;
     private final int STOP = (byte) 61;
-    private final short ANGLE_FLEXION = (short) 72;
+    private final short ANGLE_FLEXION = (short) 72.0;
     private final short ANGLE_EXTENSION = (short) 0.0;
     private final short ANGLE_INT = (short) 36.0;
     private Timer timerConf;
     private final int CONF_DELAY = 5000;
     private int stateConf = 0;
-
     private boolean calibrationLogin = false;
-
     private int stateMovement = 1;
     private int flexionUserAngle = 0;
     private int extensionUserAngle = 0;
     private int zeroUserAngle = 0;
-
     private int stateCount = 1;
     private int counterValue = 0;
-
     private int stateIso = 1;
     private List<Integer> IsoList = new ArrayList<>();
     private final List<Integer> ForceMax = new ArrayList<>();
     private final BarChartIso<String, Number> barchartiso = new BarChartIso(new CategoryAxis(), new NumberAxis());
     private boolean IsoChart = false;
     private int IsoPosition = -1;
-
     private boolean exercise = false;
-    //private boolean warmup = false;
     private boolean exercisedone = false;
     private int userAngle = 0;
     private int userForce = 0;
-
     private boolean healthMonitor = false;
-    
     private String pc_id;
     private String hub_sensorization;
-    
     private boolean loadcell = false;
-    
     private String citizenForce = "";
     private String citizenExercise = "";
-    
     private String citizenID = "";
-    
-//    private HgMqttClient hgMqttClient;
 
     public FXMLDocumentController(String pcid, String sensorization, String loadcell, String directory) {
         pc_id = pcid;
@@ -679,14 +655,7 @@ public class FXMLDocumentController implements Initializable {
             ProgressConnectHome.setVisible(true);
             CircleConnect.setOpacity(0.2);
             ProgressConnect.setVisible(true);
-            AutoConnectButton.setDisable(true);
-//            if (!hgMqttClient.isConnected()){
-//                try {
-//                    hgMqttClient.initialise();
-//                } catch (HgMqttClientException ex) {
-//                    VIEWER_LOGGER.error(ex.getMessage());
-//                }
-//            }            
+            AutoConnectButton.setDisable(true);          
             onHgHubMessage.dispatch(new HgHubMessage(EventMessageType.AUTO_CONNECTION_REQUEST, pc_id, null));
             stateConf = AUTOSTART;
             timerConf = new Timer();
@@ -724,7 +693,6 @@ public class FXMLDocumentController implements Initializable {
                 timerConnection.scheduleAtFixedRate(new TimerConnectionTask(), CONN_DELAY, CONN_DELAY);
                 StopButton.setDisable(false);
                 StartExerciseButton.setDisable(false);
-                //WarmUpButton.setDisable(false);
                 tabCounter.setDisable(false);
                 tabMovement.setDisable(false);
                 tabIsometric.setDisable(false);
@@ -800,7 +768,6 @@ public class FXMLDocumentController implements Initializable {
             timerConf.purge();
             StopButton.setDisable(false);
             StartExerciseButton.setDisable(false);
-            //WarmUpButton.setDisable(false);
             tabCounter.setDisable(false);
             tabMovement.setDisable(false);
             tabIsometric.setDisable(false);
@@ -818,7 +785,6 @@ public class FXMLDocumentController implements Initializable {
             timerConf = new Timer();
             timerConf.schedule(new TimerConfTask(), CONF_DELAY);
         });
-
     }
 
     public void receiveStopConf() {
@@ -831,7 +797,6 @@ public class FXMLDocumentController implements Initializable {
             tabExercise.setDisable(true);
             StopExerciseButton.setDisable(true);
             StartExerciseButton.setDisable(true);
-            //WarmUpButton.setDisable(true);
             if (healthMonitor){
                 WarmUpButton.setDisable(false);
             }
@@ -914,7 +879,6 @@ public class FXMLDocumentController implements Initializable {
         TrainingWeightText.getValueFactory().setValue(0);
         TrainIdText.setText("");
         ForceTestIdText.setText("");
-
         try {
             ParametersResponseJson parametersResponseJson = this.ittmApi.downloadTrainingParametersLatest();
             UserIdText.setText(parametersResponseJson.getValues().getCitizenId());
@@ -927,17 +891,14 @@ public class FXMLDocumentController implements Initializable {
             CounterweightUserText.getValueFactory().setValue((int) parametersResponseJson.getValues().getLeCounterWeight());
             SeatCushionText.setText(parametersResponseJson.getValues().getLeSeatCushion());
             TrainingWeightText.getValueFactory().setValue(Math.round(parametersResponseJson.getValues().getLeTrainingWeight()));
-
             String trainingId = parametersResponseJson.getValues().getTrainingId();
             if (trainingId.startsWith("MT_")) {
                 TrainIdText.setText(trainingId);
             } else if (trainingId.startsWith("FT_")) {
                 ForceTestIdText.setText(trainingId);
             }
-            
             VIEWER_LOGGER.warn("UpdateUser = " + MenuTabpane.getSelectionModel().getSelectedItem().getText());
             VIEWER_LOGGER.warn((new ParametersGsonUtil().toResponseJson(parametersResponseJson)));            
-
         } catch (IttmApiException ex) {
             VIEWER_LOGGER.error(ex.getMessage());
             showPopupIttmError(ex.getMessage());
@@ -1140,7 +1101,6 @@ public class FXMLDocumentController implements Initializable {
             timerConf = new Timer();
             timerConf.schedule(new TimerConfTask(), CONF_DELAY);
         });
-
     }
 
     public void receiveIntAngleConf() {
@@ -1179,7 +1139,6 @@ public class FXMLDocumentController implements Initializable {
             timerConf = new Timer();
             timerConf.schedule(new TimerConfTask(), CONF_DELAY);
         });
-
     }
 
     public void receiveFlexionAngleConf() {
@@ -1256,7 +1215,6 @@ public class FXMLDocumentController implements Initializable {
             timerConf = new Timer();
             timerConf.schedule(new TimerConfTask(), CONF_DELAY);
         });
-
     }
 
     public void receivePressureConf() {
@@ -1398,7 +1356,6 @@ public class FXMLDocumentController implements Initializable {
     void CounterTabSelected() {
         Platform.runLater(() -> {
             if (tabCounter.isSelected()) {
-                //updateUser();
                 CountCitizenLabel.setText(UserIdText.getText());
                 CountZeroLabel.setText(Integer.toString(ZeroPositionText.getValue()));
                 CountExtensionLabel.setText(Integer.toString(UserAngleExtension.getValue()));
@@ -1541,7 +1498,6 @@ public class FXMLDocumentController implements Initializable {
                     barchartiso.StartChart(IsoList);
                     stateIso = 2;
                     break;
-
                 case 2:
                     //Start angle
                     IsoPosition = -1;
@@ -1609,7 +1565,6 @@ public class FXMLDocumentController implements Initializable {
                     forceTestData[i] = value;
                 }
                 forceTestRequestJson.setForceTestData(forceTestData);
-
                 try {
                     ittmApi.uploadForceTest(forceTestRequestJson);
                 } catch (IttmApiException ex) {
@@ -1804,8 +1759,7 @@ public class FXMLDocumentController implements Initializable {
         ExerciseText.setText("");
         ExerciseImage.imageProperty().set(null);
         KbzGrid.setVisible(false);
-        WarmUpButton.setDisable(true);
-            
+        WarmUpButton.setDisable(true);  
     }
     
     @FXML
@@ -1843,7 +1797,11 @@ public class FXMLDocumentController implements Initializable {
     private void sendStartTrainingMessages() {
         onHgHubMessage.dispatch(new HgHubMessage(EventMessageType.TRAINING_TIMES, UserAngleFlexion.getValue() + ";" + UserAngleExtension.getValue() + ";" + UserExtensionTime.getValue() + ";" + UserFlexionTime.getValue() + ";" + UserHoldTime.getValue() + ";", null));
         onHgHubMessage.dispatch(new HgHubMessage(EventMessageType.CITIZEN_ID, UserIdText.getText(), null));
+        onHgHubMessage.dispatch(new HgHubMessage(EventMessageType.FLEXION_ANGLE, null, (float)UserAngleFlexion.getValue()));
+        onHgHubMessage.dispatch(new HgHubMessage(EventMessageType.EXTENSION_ANGLE, null, (float)UserAngleExtension.getValue()));
         onHgHubMessage.dispatch(new HgHubMessage(EventMessageType.TRAINING_ID, TrainIdText.getText(), null));
+        onHgHubMessage.dispatch(new HgHubMessage(EventMessageType.TRAINING_NUMBER, null, (float)TrainingNumberText.getValue()));
+        onHgHubMessage.dispatch(new HgHubMessage(EventMessageType.TRAINING_SESSION, null, (float)SessionNumberText.getValue()));
         onHgHubMessage.dispatch(new HgHubMessage(EventMessageType.TRAINING_WEIGHT, null, (float)TrainingWeightText.getValue()));
         onHgHubMessage.dispatch(new HgHubMessage(EventMessageType.START_TRAINING, null, null));
     }
@@ -1869,21 +1827,6 @@ public class FXMLDocumentController implements Initializable {
             onHgHubMessage.dispatch(new HgHubMessage(EventMessageType.STOP_TRAINING, null, null));
             exercisedone=true;
             VIEWER_LOGGER.warn("Stop Button Pressed.");
-            
-//            //change this to upload training button
-//            //remove thread sleep
-//            if (warmup) {
-//                warmup = false;
-//                exercisePane.setStyle("-fx-background-color: null");
-//            }
-//            else {
-//                try {
-//                    Thread.sleep(1000);
-//                } catch (InterruptedException ex) {
-//                    Logger.getLogger(FXMLDocumentController.class.getName()).log(Level.SEVERE, null, ex);
-//                }
-//                onHgHubMessage.dispatch(new HgHubMessage(EventMessageType.UPLOAD_TRAINING, null, null));
-//            }
         });
     }
 
@@ -1895,14 +1838,7 @@ public class FXMLDocumentController implements Initializable {
             onHgHubMessage.dispatch(new HgHubMessage(EventMessageType.UPLOAD_TRAINING, null, null));
             WarmUpButton.setDisable(true);
         }
-    }     
-    
-//    @FXML
-//    void WarmUpButtonPress() {
-//        warmup = true;
-//        exercisePane.setStyle("-fx-background-color: #53646F4D");
-//        StartExerciseButtonPress();
-//    }    
+    }      
     
     public void addKbzMessage(String text) {
         Platform.runLater(() -> {
@@ -1919,12 +1855,6 @@ public class FXMLDocumentController implements Initializable {
                     RepetitionTimeLabel.setText(new SimpleDateFormat("mm:ss").format(new Date(milis)));
                     RepetitionNumberLabel.setText(data[3]);
                 }
-//                if (data.length > 4) {
-//                    ExerciseText.setText(data[4]);
-//                }
-//                if (data.length > 5) {
-//                    ExerciseText.setText(data[4] + "\n" + data[5]);
-//                }
             }
         });
     }
@@ -2017,7 +1947,6 @@ public class FXMLDocumentController implements Initializable {
             AngleLabel.setText(String.valueOf(userAngle));
             movementAngleLabel.setText(String.valueOf(userAngle));
             CountAngleLabel.setText(String.valueOf(userAngle));
-
             IsoAngleText.setText(String.valueOf(userAngle));
             AngleGauge.setValue(angle);
         });
@@ -2176,7 +2105,6 @@ public class FXMLDocumentController implements Initializable {
                 break;
             default:
                 return;
-
         }
         bundle = ResourceBundle.getBundle("pt.uninova.s4h.healthgateway.gui.bundles.bundle", locale);
         RefreshLanguage();
@@ -2199,7 +2127,6 @@ public class FXMLDocumentController implements Initializable {
             tabConnectTitle.setText(bundle.getString("tab.connect.title"));
             communicationLabel.setText(bundle.getString("tab.connect.label.communication"));
             AutoConnectButton.setText(bundle.getString("tab.connect.button.autoconnect"));
-            //SerialPortLabel.setText(bundle.getString("tab.connect.label.serialport"));
             ConnectButton.setText(bundle.getString("tab.connect.button.connect"));
             DisconnectButton.setText(bundle.getString("tab.connect.button.disconnect"));
             dataAcquisitionLabel.setText(bundle.getString("tab.connect.label.acquisition"));
@@ -2339,8 +2266,7 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     void exitApplication() {
-        Platform.runLater(() -> {
-            
+        Platform.runLater(() -> {            
             try {
                 onHgHubMessage.dispatch(new HgHubMessage(EventMessageType.DISCONNECT, null, null));
             } catch (Exception ex) {
@@ -2348,7 +2274,6 @@ public class FXMLDocumentController implements Initializable {
             }
             System.exit(0);
         });
-
     }
 
     @Override
@@ -2430,12 +2355,10 @@ public class FXMLDocumentController implements Initializable {
         LanguageList.setCellFactory((ListView<String> p) -> new ListCell<String>() {
             private final ImageView imageView;
             private Label label;
-
             {
                 setContentDisplay(ContentDisplay.GRAPHIC_ONLY);
                 imageView = new ImageView();
             }
-
             @Override
             protected void updateItem(String item, boolean empty) {
                 super.updateItem(item, empty);
@@ -2457,13 +2380,7 @@ public class FXMLDocumentController implements Initializable {
         });
         LanguageList.getSelectionModel().selectFirst();
         this.LanguageListPress();
-
         if (hub_sensorization.equals("false")){
-//            try {
-//                MachineImage.setImage(new Image(getClass().getResource("images/machine.png").toURI().toString()));
-//            } catch (URISyntaxException ex) {
-//                VIEWER_LOGGER.error("Error load image exercise: " + ex);
-//            }
             HeadBarL.setVisible(false);
             HeadBarR.setVisible(false);
             HandsBarL.setVisible(false);
@@ -2487,12 +2404,7 @@ public class FXMLDocumentController implements Initializable {
             HandsCircleL1.setVisible(false);  
             HandsCircleR1.setVisible(false);      
             BackCircle1.setVisible(false);
-        } else if (hub_sensorization.equals("true2")){
-//            try {
-//                MachineImage.setImage(new Image(getClass().getResource("images/machine3.png").toURI().toString()));
-//            } catch (URISyntaxException ex) {
-//                VIEWER_LOGGER.error("Error load image exercise: " + ex);
-//            }            
+        } else if (hub_sensorization.equals("true2")){            
             HeadBarL.setVisible(false);
             HeadBarR.setVisible(false);
             HandsBarL.setVisible(false);
@@ -2516,12 +2428,7 @@ public class FXMLDocumentController implements Initializable {
             HandsCircleL1.setVisible(true);  
             HandsCircleR1.setVisible(true);      
             BackCircle1.setVisible(true);            
-        } else if (hub_sensorization.equals("true")){
-//            try {
-//                MachineImage.setImage(new Image(getClass().getResource("images/machine3.png").toURI().toString()));
-//            } catch (URISyntaxException ex) {
-//                VIEWER_LOGGER.error("Error load image exercise: " + ex);
-//            }            
+        } else if (hub_sensorization.equals("true")){           
             HeadBarL.setVisible(false);
             HeadBarR.setVisible(false);
             HandsBarL.setVisible(false);
@@ -2570,15 +2477,12 @@ public class FXMLDocumentController implements Initializable {
             HandsCircleR1.setVisible(true);      
             BackCircle1.setVisible(true);            
         }
-        
         ittmApi = IttmApi.getInstance();
-
         HgMqttClient hgMqttClient = HgMqttClient.getInstance();
         IttmTrainingManager ittmManager = IttmTrainingManager.getInstance();
         HubHgMessageListener hubHgMessageListener = new HubHgMessageListener(this, ittmManager);
         hgMqttClient.onHubHgMessage().addListener(hubHgMessageListener);
         ittmManager.onHubHgMessage().addListener(hubHgMessageListener);
-
         this.onHgHubMessage = new EventDispatcher<>();
         this.onHgHubMessage().addListener(new HgHubMessageListener(hgMqttClient, ittmManager));
         try {
@@ -2587,7 +2491,6 @@ public class FXMLDocumentController implements Initializable {
             VIEWER_LOGGER.error(ex.getMessage());
             System.exit(-1);
         }
-
         lockMain(true);
     }
 

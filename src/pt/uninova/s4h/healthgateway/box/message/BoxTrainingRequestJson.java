@@ -1,32 +1,31 @@
 package pt.uninova.s4h.healthgateway.box.message;
 
-import pt.uninova.s4h.healthgateway.ittm.message.training.*;
 import com.google.gson.annotations.SerializedName;
 
 /**
- * Class to hold the Training Json file to be sent to the ITTM servers.
- *
- * @author Vasco Delgado-Gomes
- * @email vmdg@uninova.pt
- * @version 10 October 2019 - First version.
+ * Class to construct Training Json file to send to B-Health IoT Box.
  */
+
 public class BoxTrainingRequestJson {
 
     @SerializedName("timestamp")
     private long timestamp;
 
     @SerializedName("length")
-    private long length;
+    private long length;    
 
     @SerializedName("score")
     private float score;
 
     @SerializedName("repetitions")
-    private int repetitions;
+    private int repetitions;    
     
     @SerializedName("weight")
     private int weight;    
 
+    @SerializedName("calories")
+    private float calories;     
+    
     public long getTimestamp() {
         return timestamp;
     }
@@ -66,4 +65,12 @@ public class BoxTrainingRequestJson {
     public void setWeight(int weight) {
         this.weight = weight;
     }
+    
+    public float getCalories() {
+        return calories;
+}
+
+    public void setCalories(float calories) {
+        this.calories = calories;
+    }    
 }

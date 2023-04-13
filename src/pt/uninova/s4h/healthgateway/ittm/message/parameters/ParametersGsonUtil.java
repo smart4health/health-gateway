@@ -5,20 +5,14 @@ import com.google.gson.GsonBuilder;
 
 /**
  * Implements an auxiliary class to make the Parameters json conversion.
- *
- * @author Vasco Delgado-Gomes
- * @email vmdg@uninova.pt
- * @version 10 October 2019 - First version.
  */
 public class ParametersGsonUtil {
 
-    //private static final String DATE_FORMAT = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'";
     private Gson gson = null;
 
     public ParametersGsonUtil() {
         GsonBuilder gsonBuilder = new GsonBuilder();
         gsonBuilder.setPrettyPrinting();
-        //gsonBuilder.setDateFormat(DATE_FORMAT);
         this.gson = gsonBuilder.create();
     }
 

@@ -7,10 +7,6 @@ import pt.uninova.s4h.healthgateway.util.message.HgHubMessage;
 
 /**
  * Listener to Health Gateway to Hub Messages.
- *
- * @author Vasco Delgado-Gomes
- * @email vmdg@uninova.pt
- * @version 27 May 2020 - First version.
  */
 public class HgHubMessageListener implements EventListener<HgHubMessage> {
 
@@ -24,18 +20,28 @@ public class HgHubMessageListener implements EventListener<HgHubMessage> {
 
     @Override
     public void onEvent(HgHubMessage e) {
-
         if (ittmTrainingManager == null){
             return;
         }
-
         switch (e.getMessageType()) {
             case CITIZEN_ID:
                 ittmTrainingManager.newCitizenId(e.getStringValue());
                 return;
+            case FLEXION_ANGLE:
+                ittmTrainingManager.newFlexionAngle(e.getValue());
+                break;
+            case EXTENSION_ANGLE:
+                ittmTrainingManager.newExtensionAngle(e.getValue());
+                break;                
             case TRAINING_ID:
                 ittmTrainingManager.newTrainingId(e.getStringValue());
                 return;
+            case TRAINING_NUMBER:
+                ittmTrainingManager.newTrainingNumber(e.getValue());
+                return;                
+            case TRAINING_SESSION:
+                ittmTrainingManager.newTrainingSession(e.getValue());
+                return;                
             case UPLOAD_TRAINING:
                 ittmTrainingManager.newUploadTraining();
                 return;
@@ -47,26 +53,20 @@ public class HgHubMessageListener implements EventListener<HgHubMessage> {
                 break;
             case TRAINING_WEIGHT:
                 ittmTrainingManager.newTrainingWeight(e.getValue());
-                break;                
+                return;                
         }
-        
         if (hgMqttClient == null) {
             return;
         }
-        
         MedxEvent medxEvent = new MedxEvent(e.getMessageType().name());
-
         if (e.getValue() != null) {
             medxEvent.setValue(e.getValue());
         }
-
         if (e.getStringValue() != null) {
             medxEvent.setStringValue(e.getStringValue());
         }
-
         MedxEvent medxEvents[] = new MedxEvent[1];
         medxEvents[0] = medxEvent;
         hgMqttClient.publishMedxEvents(medxEvents);
-
     }
 }

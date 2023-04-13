@@ -14,10 +14,6 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Class to control the popup.
- *
- * @author Fábio Januário and Vasco Delgado-Gomes
- * @email faj@uninova.pt, vmdg@uninova.pt
- * @version 12 November 2019 - v1.0.
  */
 public class FXMLPopupController implements Initializable {
 
@@ -25,9 +21,7 @@ public class FXMLPopupController implements Initializable {
     private Label popupLabel;
     @FXML
     private Button popupButton;
-
     private ResourceBundle resourceBundle;
-
     private static final ch.qos.logback.classic.Logger POPUP_LOGGER = (ch.qos.logback.classic.Logger) LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
 
     @FXML

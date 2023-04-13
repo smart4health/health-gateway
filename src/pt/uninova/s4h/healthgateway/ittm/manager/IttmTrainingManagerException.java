@@ -2,10 +2,6 @@ package pt.uninova.s4h.healthgateway.ittm.manager;
 
 /**
  * Class to define an ITTM Training Manager Exception.
- *
- * @author Vasco Delgado-Gomes
- * @email vmdg@uninova.pt
- * @version 05 June 2020 - First version.
  */
 public class IttmTrainingManagerException extends Exception {
 

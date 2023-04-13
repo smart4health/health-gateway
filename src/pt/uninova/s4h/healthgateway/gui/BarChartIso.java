@@ -26,18 +26,11 @@ import javafx.scene.text.Text;
 
 /**
  * Class to draw isometric test chart.
- *
- * @author Fábio Januário
- * @param <X>
- * @param <Y>
- * @email faj@uninova.pt
- * @version 07 October 2019 - v1.0.
  */
 
 public class BarChartIso<X, Y> extends BarChart<X, Y> {
     
     private ObservableList<Data<X, X>> verticalRangeMarkers;
-      
     private final Axis xAxis;
     private final Axis yAxis; 
     private final XYChart.Series seriesMax = new XYChart.Series();
@@ -47,7 +40,6 @@ public class BarChartIso<X, Y> extends BarChart<X, Y> {
     private List<Integer> listMax;
     private boolean flagMax = false;
     private Data<X,X> lastVRM;
-    
     Map<Node, Text> nodeMap = new HashMap<>();      
     
     public BarChartIso(Axis xAxis, Axis yAxis) {
@@ -63,7 +55,6 @@ public class BarChartIso<X, Y> extends BarChart<X, Y> {
         this.xAxis.setAnimated(false);
         this.yAxis.setAnimated(false);
         this.setAnimated(false);
-        
         verticalRangeMarkers = FXCollections.observableArrayList(data -> new Observable[]{data.XValueProperty()});
         verticalRangeMarkers = FXCollections.observableArrayList(data -> new Observable[]{data.YValueProperty()}); // 2nd type of the range is X type as well
         verticalRangeMarkers.addListener((InvalidationListener) observable -> layoutPlotChildren());        
@@ -137,7 +128,6 @@ public class BarChartIso<X, Y> extends BarChart<X, Y> {
         final double zeroPos = (((ValueAxis)yAxis).getLowerBound() > 0) ?
                 ((ValueAxis)yAxis).getDisplayPosition(((ValueAxis)yAxis).getLowerBound()) : ((ValueAxis)yAxis).getZeroPosition();
         if (barWidth <= 0) barWidth = 1;
-        // update bar positions and sizes
         int catIndex = 0;
         for (String category : ((CategoryAxis)xAxis).getCategories()) {
             int index = 0;
@@ -155,7 +145,6 @@ public class BarChartIso<X, Y> extends BarChart<X, Y> {
                     }
                     final double bottom = Math.min(valPos,zeroPos);
                     final double top = Math.max(valPos,zeroPos);
-                    //bottomPos = bottom;
                     if (index == 0){
                         bar.resizeRelocate( categoryPos + barOffset, bottom, barWidth, top-bottom);
                     } else if (index ==1){
@@ -192,8 +181,7 @@ public class BarChartIso<X, Y> extends BarChart<X, Y> {
         for (Integer angle : list){
             StringList.add(String.valueOf(angle));
             listMax.add(0);
-        }
-        
+        }  
         Collections.reverse(StringList);
         xAxis.invalidateRange(StringList);
         ((CategoryAxis)xAxis).setCategories(StringList);

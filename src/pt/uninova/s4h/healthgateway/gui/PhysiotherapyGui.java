@@ -13,10 +13,6 @@ import javafx.stage.WindowEvent;
 
 /**
  * Main Class.
- *
- * @author Fábio Januário
- * @email faj@uninova.pt
- * @version 07 October 2019 - v1.0.
  */
 
 public class PhysiotherapyGui extends Application {

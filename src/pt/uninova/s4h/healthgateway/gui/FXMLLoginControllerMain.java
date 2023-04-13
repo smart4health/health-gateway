@@ -16,10 +16,6 @@ import pt.uninova.s4h.healthgateway.ittm.api.IttmApiException;
 
 /**
  * Class to control the login interface and perform user commands.
- *
- * @author Fábio Januário
- * @email faj@uninova.pt
- * @version 10 October 2019 - v1.0.
  */
 public class FXMLLoginControllerMain implements Initializable {
 
@@ -37,10 +33,8 @@ public class FXMLLoginControllerMain implements Initializable {
     private Label passwordLabel;
     @FXML
     private TextField userField;
-
     private static FXMLDocumentController GUI;
     private boolean login;
-
     private ResourceBundle bundle;
 
     FXMLLoginControllerMain(FXMLDocumentController controller, boolean login) {
@@ -55,7 +49,6 @@ public class FXMLLoginControllerMain implements Initializable {
                 IttmApi.getInstance().login(userField.getText(), passwordField.getText());
                 GUI.setIttmUser(userField.getText());
                 GUI.unlockMain(true);
-                //HM ON
                 Stage stage = (Stage) PasswordOkButton.getScene().getWindow();
                 stage.close();
             } catch (IttmApiException ex) {
@@ -80,7 +73,6 @@ public class FXMLLoginControllerMain implements Initializable {
 
     @FXML
     void HMButtonPress(ActionEvent event) {
-        //HM OFF
         GUI.unlockMain(false);
         Stage stage = (Stage) PasswordOkButton.getScene().getWindow();
         stage.close();

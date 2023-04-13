@@ -13,10 +13,6 @@ import javafx.stage.Stage;
 
 /**
  * Class to control the login interface and perform user commands.
- *
- * @author Fábio Januário
- * @email faj@uninova.pt
- * @version 10 October 2019 - v1.0.
  */
 
 public class FXMLLoginControllerCalib implements Initializable {
@@ -29,10 +25,8 @@ public class FXMLLoginControllerCalib implements Initializable {
     private Button PasswordCancelButton; 
     @FXML
     private Label passwordLabel;    
-    
     private static final String CALIBRATION_PASS = "1234"; 
     private static FXMLDocumentController GUI;
-    
     private ResourceBundle bundle;
     
     FXMLLoginControllerCalib (FXMLDocumentController controller){

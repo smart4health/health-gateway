@@ -4,10 +4,6 @@ import com.google.gson.annotations.SerializedName;
 
 /**
  * Class to hold the Login response received from the ITTM servers.
- *
- * @author Vasco Delgado-Gomes
- * @email vmdg@uninova.pt
- * @version 10 October 2019 - First version.
  */
 public class ParametersResponseJson {
 
@@ -45,7 +41,6 @@ public class ParametersResponseJson {
     }
 
     public String toStringConsole() {
-
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("Message= ").append(message).append("\n");
         stringBuilder.append("Status Code= ").append(statusCode).append("\n");

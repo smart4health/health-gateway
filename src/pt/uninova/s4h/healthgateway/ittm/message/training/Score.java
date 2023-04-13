@@ -4,10 +4,6 @@ import com.google.gson.annotations.SerializedName;
 
 /**
  * Class to hold a SENML event received in the MQTT topics.
- *
- * @author Vasco Delgado-Gomes
- * @email vmdg@uninova.pt
- * @version 10 October 2019 - First version.
  */
 public class Score {
 
@@ -18,7 +14,7 @@ public class Score {
     private int steps;
     
     @SerializedName("calories")
-    private int calories;
+    private float calories;
 
     public float getPercentage() {
         return percentage;
@@ -36,11 +32,11 @@ public class Score {
         this.steps = steps;
     }
 
-    public int getCalories() {
+    public float getCalories() {
         return calories;
     }
 
-    public void setCalories(int calories) {
+    public void setCalories(float calories) {
         this.calories = calories;
     }
     

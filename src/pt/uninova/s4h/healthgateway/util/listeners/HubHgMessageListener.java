@@ -1,17 +1,11 @@
 package pt.uninova.s4h.healthgateway.util.listeners;
 
 import pt.uninova.s4h.healthgateway.gui.FXMLDocumentController;
-import pt.uninova.s4h.healthgateway.ittm.api.IttmApiTokenException;
 import pt.uninova.s4h.healthgateway.ittm.manager.IttmTrainingManager;
 import pt.uninova.s4h.healthgateway.util.message.HubHgMessage;
-import pt.uninova.s4h.healthgateway.util.message.MessagesUtil;
 
 /**
  * Listener to Hub to Health Gateway Messages.
- *
- * @author Vasco Delgado-Gomes
- * @email vmdg@uninova.pt
- * @version 27 May 2020 - First version.
  */
 public class HubHgMessageListener implements EventListener<HubHgMessage> {
 
@@ -28,7 +22,6 @@ public class HubHgMessageListener implements EventListener<HubHgMessage> {
         if (controller == null) {
             return;
         }
-
         switch (e.getMessageType()) {
             case CONNECTION_RESPONSE:
                 controller.receiveConnectionResponse(Boolean.parseBoolean(e.getStringValue()));
@@ -105,11 +98,9 @@ public class HubHgMessageListener implements EventListener<HubHgMessage> {
             case BUTTON:
                 controller.receiveButton();
                 break;
-                //replace by separate events?
             case USER_INFORMATION_RESPONSE:
                 controller.updateUser();
                 break;
-                //replace by separate events?
             case USER_ERROR:
                 break;
             case TRAINING_API_ERROR:
@@ -122,9 +113,6 @@ public class HubHgMessageListener implements EventListener<HubHgMessage> {
                 controller.showPopupIttmError(e.getStringValue());
                 controller.healthMonitorConnected(false);
                 break;                
-//            case COMM_PORTS_RESPONSE:
-//                controller.receiveCommPorts(e.getStringValue());
-//                break;
             case CHECK_PORT_RESPONSE:
                 controller.receiveCheckPort(Boolean.parseBoolean(e.getStringValue()));
             default:

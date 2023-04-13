@@ -12,22 +12,15 @@ import org.slf4j.LoggerFactory;
 import pt.uninova.s4h.healthgateway.box.message.BoxTrainingGsonUtil;
 import pt.uninova.s4h.healthgateway.box.message.BoxTrainingRequestJson;
 import pt.uninova.s4h.healthgateway.ittm.message.training.TrainingRequestJson;
-import pt.uninova.s4h.healthgateway.box.message.BoxTrainingResponseJson;
 
 /**
- * Class to define an ITTM API Interface.
- *
- * @author Vasco Delgado-Gomes
- * @email vmdg@uninova.pt
- * @version 10 October 2019 - First version.
+ * Class to define B-Health IoT Box API Interface.
  */
 public class BoxApi {
 
     private static final String CONTENT_TYPE = "application/json";
     private final String hostUrl;
-
     private static BoxApi boxApi = null;
-
     private static final ch.qos.logback.classic.Logger BOX_API_LOGGER = (ch.qos.logback.classic.Logger) LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
 
     private BoxApi(String hostUrl) {
@@ -60,9 +53,7 @@ public class BoxApi {
             byte[] input = jsonRequest.getBytes();
             outputStream.write(input, 0, input.length);
             BOX_API_LOGGER.trace("JsonRequest= " + jsonRequest);
-
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
-
             StringBuilder responseBuilder = new StringBuilder();
             String responseLine = null;
             while ((responseLine = bufferedReader.readLine()) != null) {
@@ -80,25 +71,16 @@ public class BoxApi {
         }
     }
 
-    public void uploadTraining(TrainingRequestJson trainingRequestJson, int trainingWeight) throws BoxApiException {
-
+    public void uploadTraining(TrainingRequestJson trainingRequestJson) throws BoxApiException {
         BoxTrainingRequestJson boxTrainingRequestJson = new BoxTrainingRequestJson();
         boxTrainingRequestJson.setTimestamp(trainingRequestJson.getStartTime()/1000);
         boxTrainingRequestJson.setLength((trainingRequestJson.getStopTime()-trainingRequestJson.getStartTime())/1000);
         boxTrainingRequestJson.setScore(trainingRequestJson.getScore().getPercentage());
         boxTrainingRequestJson.setRepetitions(trainingRequestJson.getRepetitions());
-        boxTrainingRequestJson.setWeight(trainingWeight);
-        
+        boxTrainingRequestJson.setWeight(trainingRequestJson.getTrainingWeight());
+        boxTrainingRequestJson.setCalories(trainingRequestJson.getScore().getCalories());
         BoxTrainingGsonUtil boxTrainingGsonUtil = new BoxTrainingGsonUtil();
-
         String boxTrainingRequestStr = boxTrainingGsonUtil.toRequestJson(boxTrainingRequestJson);
         String boxTrainingResponseStr = boxPostRequest(CONTENT_TYPE, boxTrainingRequestStr);
-
-        //BoxTrainingResponseJson boxTrainingResponseJson = boxTrainingGsonUtil.fromResponseJson(boxTrainingResponseStr);
-        //if (boxTrainingResponseJson.getStatusCode() != 200) {
-        //    throw new BoxApiException("Error Uploading Training Data: Status " + boxTrainingResponseJson.getStatusCode() + " = " + boxTrainingResponseJson.getMessage());
-        //}
-
     }
-
 }

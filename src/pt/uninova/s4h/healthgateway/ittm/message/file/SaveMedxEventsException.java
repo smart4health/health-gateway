@@ -2,10 +2,6 @@ package pt.uninova.s4h.healthgateway.ittm.message.file;
 
 /**
  * Class to define a Save MedX Events Exception.
- *
- * @author Vasco Delgado-Gomes
- * @email vmdg@uninova.pt
- * @version 21 November 2019 - First version.
  */
 public class SaveMedxEventsException extends Exception {
 
